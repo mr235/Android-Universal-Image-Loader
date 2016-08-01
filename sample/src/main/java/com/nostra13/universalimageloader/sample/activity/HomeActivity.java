@@ -21,6 +21,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.sample.Constants;
 import com.nostra13.universalimageloader.sample.R;
@@ -47,10 +48,10 @@ public class HomeActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.ac_home);
 
-		File testImageOnSdCard = new File("/mnt/sdcard", TEST_FILE_NAME);
-		if (!testImageOnSdCard.exists()) {
-			copyTestImageToSdCard(testImageOnSdCard);
-		}
+//		File testImageOnSdCard = new File("/mnt/sdcard", TEST_FILE_NAME);
+//		if (!testImageOnSdCard.exists()) {
+//			copyTestImageToSdCard(testImageOnSdCard);
+//		}
 	}
 
 	public void onImageListClick(View view) {
